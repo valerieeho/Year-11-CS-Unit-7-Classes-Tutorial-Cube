@@ -3,7 +3,7 @@
 Your job is to create one class called Cube.
 You should pass all of the tests in the CubeTester class (provided).
 
-Create a class called Cube. Cube has one single private integer variable called side, which represents the length of a side of the cube, a getter method called getSide(), a setter method called setSide(int side), a method that returns the surface area of the cube called getSurfaceArea(), a method that returns the volume of the cube called getVolume(), and a toString method that returns a String in the format, for example:
+Create a class called Cube. Cube has one single private integer variable called side, which represents the length of a side of the cube, a getter method called getSide(), a setter method called setSide(int side), a method that returns the surface area of the cube called calculateSurfaceArea(), a method that returns the volume of the cube called calculateVolume(), and a toString method that returns a String in the format, for example:
 
 Cube{side=4} .
 
