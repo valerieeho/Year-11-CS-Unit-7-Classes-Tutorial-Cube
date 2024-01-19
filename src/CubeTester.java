@@ -49,29 +49,29 @@ public class CubeTester {
     @Test
     public void TestVolume() {
         Cube cube = new Cube(5);
-        int volume = cube.getVolume();
-        assertTrue(volume == 125, "Ensure that your getVolume method has been implemented correctly!");
+        int volume = cube.calculateVolume();
+        assertTrue(volume == 125, "Ensure that your calculateVolume method has been implemented correctly!");
     }
 
     @Test
     public void TestVolumeTwo() {
         Cube cube = new Cube(7);
-        int volume = cube.getVolume();
-        assertTrue(volume == 343, "Ensure that your getVolume method has been implemented correctly!");
+        int volume = cube.calculateVolume();
+        assertTrue(volume == 343, "Ensure that your calculateVolume method has been implemented correctly!");
     }
 
     @Test
     public void TestSurfaceArea() {
         Cube cube = new Cube(5);
-        int surfaceArea = cube.getSurfaceArea();
-        assertTrue(surfaceArea == 150, "Ensure that your getSurfaceArea method has been implemented correctly!");
+        int surfaceArea = cube.calculateSurfaceArea();
+        assertTrue(surfaceArea == 150, "Ensure that your calculateSurfaceArea method has been implemented correctly!");
     }
 
     @Test
     public void TestSurfaceAreaTwo() {
         Cube cube = new Cube(7);
-        int surfaceArea = cube.getSurfaceArea();
-        assertTrue(surfaceArea == 294, "Ensure that your getSurfaceArea method has been implemented correctly!");
+        int surfaceArea = cube.calculateSurfaceArea();
+        assertTrue(surfaceArea == 294, "Ensure that your calculateSurfaceArea method has been implemented correctly!");
     }
 
 }
