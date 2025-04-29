@@ -1,33 +1,30 @@
 public class Cube {
     private int side;
-    public Cube(){
-        this.side = 1;
+    public Cube() { //constructor (same name as the class)
+        side = 1;
     }
-    public Cube(int n){
-        if (n<1){
+    public Cube(int sideLength) {
+        if (sideLength<1) {
             throw new IllegalArgumentException("A cube’s side length cannot be less than 1!");
-        }
-        side = n;
+        } //create a new instance of the illegal... class and pass a message as a parameter
+        side = sideLength;
     }
-    public int getSide(){
+    public int getSide() { //methods
         return side;
     }
-    public void SetSide(int n){
-        if (n>1){
-            throw new IllegalArgumentException("A cube's side length cannot be more than 1!");
+    public void setSide(int side) { //setter method
+        if (side<1) {
+            throw new IllegalArgumentException("A cube’s side length cannot be less than 1!");
         }
-        else {
-            side = n;
-        }
+        this.side = side; //this. means use the variables within this class (e.g. side)
     }
-    public int calculateSurfaceArea(){
+    public int getSurfaceArea() {
         return side*side*6;
     }
-    public int calculateVolume(){
+    public int getVolume() {
         return side*side*side;
     }
-    public String toString(){
-        return "Cube{side = " + side + "}";
+    public String toString() {
+        return "side=" + side;
     }
-
 }
